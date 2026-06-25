@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Блог - Уютный уголок</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <nav id="myTopnav">
+            <a href="index.html" class="logo">Уютный уголок</a>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-element" title="На главную">Главная</a></li>
+                <li><a href="index.html#services" class="menu-element" data-link="services">Меню</a></li>
+                <li><a href="index.html#portfolio" class="menu-element" data-link="portfolio">Галерея</a></li>
+                <li><a href="contacts.html" class="menu-element">Контакты</a></li>
+                <li><a href="blog.html" class="menu-element">Блог</a></li>
+            </ul>
+            <div id="hamburger" class="icon">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="top-image top-image-sub">
+            <div class="cover">
+                <div class="cover-content">
+                    <h1>Блог</h1>
+                    <p>Новости, рецепты и истории из Уютного уголка</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="blog-article">
+            <div class="blog-container"></div>
+
+            <aside class="blog-aside">
+                <div class="aside-search">
+                    <h3 class="search-title">Поиск в блоге</h3>
+                    <div class="search-delimiter"></div>
+                    <input type="text" id="search-text" class="search-text" placeholder="Введите слово">
+                    <button class="search-do">Искать</button>
+                </div>
+
+                <div class="aside-recent">
+                    <h3 class="search-title">Популярные статьи</h3>
+                    <div class="search-delimiter"></div>
+                </div>
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <!-- вставь сюда свой footer из index.html -->
+    </footer>
+
+    <!-- === ВАЖНО: скрипты в правильном порядке === -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

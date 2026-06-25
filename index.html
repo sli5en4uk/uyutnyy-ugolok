@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Уютный уголок - Кофейня</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3520dad322acec32648ab8d458c3b2226975df5f7bfae7bf52d462c3115cc4aa&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/popup.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="myTopnav">
+            <a href="index.html" class="logo">Мой уголок</a>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-element" data-link="top" title="На главную">Главная</a></li>
+                <li><a href="#services" class="menu-element" data-link="services" title="Наши услуги">Меню</a></li>
+                <li><a href="#portfolio" class="menu-element" data-link="portfolio" title="Галерея">Галерея</a></li>
+                <li><a href="contacts.html" class="menu-element" title="Контакты">Контакты</a></li>
+                <li><a href="blog.html" class="menu-element" title="Блог">Блог</a></li>
+            </ul>
+            <div id="hamburger" class="icon">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="top">
+            <div class="cover">
+                <div class="cover-content">
+                    <h1>Уютный уголок</h1>
+                    <a href="gallery.html" class="btn btn-lg btn-primary" style="padding: 15px 40px; font-size: 18px;">
+                        Место, где каждая чашка кофе - маленькое путешествие
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="main-title">Наши возможности</h2>
+            <div class="delimiter"></div>
+            <p class="main-title-description">Все для вашего комфорта и удовольствия</p>
+
+            <div class="services-container">
+                <div class="container-row">
+                    <div class="row-item">
+                        <div class="item-icon">
+                            <img src="img/icons/coffee.png" alt="Кофе">
+                        </div>
+                        <h3>Свежая обжарка</h3>
+                        <p>Мы обжариваем зерна каждый день, чтобы вы получали самый ароматный и насыщенный вкус в каждой чашке.</p>
+                    </div>
+                    <div class="row-item">
+                        <div class="item-icon">
+                            <img src="img/icons/cake.png" alt="Выпечка">
+                        </div>
+                        <h3>Домашняя выпечка</h3>
+                        <p>Наши кондитеры готовят десерты по авторским рецептам из натуральных ингредиентов без консервантов.</p>
+                    </div>
+                    <div class="row-item">
+                        <div class="item-icon">
+                            <img src="img/icons/wifi.png" alt="Wi-Fi">
+                        </div>
+                        <h3>Бесплатный Wi-Fi</h3>
+                        <p>Работайте или отдыхайте с комфортом. Высокоскоростной интернет доступен для всех гостей кофейни.</p>
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="row-item">
+                        <div class="item-icon">
+                            <img src="img/icons/music.png" alt="Музыка">
+                        </div>
+                        <h3>Живая музыка</h3>
+                        <p>По пятницам и субботам у нас выступают местные музыканты. Джаз, блюз и акустика для вашего настроения.</p>
+                    </div>
+                    <div class="row-item">
+                        <div class="item-icon">
+                            <img src="img/icons/book.png" alt="Книги">
+                        </div>
+                        <h3>Книжный уголок</h3>
+                        <p>Возьмите книгу с нашей полки или принесите свою. Обмен книгами между гостями приветствуется.</p>
+                    </div>
+                    <div class="row-item">
+                        <div class="item-icon">
+                            <img src="img/icons/gift.png" alt="Подарок">
+                        </div>
+                        <h3>Программа лояльности</h3>
+                        <p>Каждый шестой напиток в подарок. Накапливайте баллы и получайте приятные бонусы.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay black-back">
+            <h2 class="main-title">Подробности</h2>
+            <div class="delimiter"></div>
+            <p class="main-title-description">Узнайте больше о нашей кофейне и специальных предложениях</p>
+            <button class="common-button" type="button" name="button">Узнать</button>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <h2 class="main-title">Наши работы</h2>
+            <div class="delimiter"></div>
+            <p class="main-title-description">Атмосфера и блюда нашей кофейни</p>
+
+            <div class="portfolio-container">
+                <div class="portfolio-item" style="background-image: url('img/portfolio/01.png')" data-src="img/portfolio/01.png">
+                    <div class="description-container">
+                        <p class="portfolio-title">Капучино с рисунком</p>
+                        <p class="portfolio-description">Наши бариста создают настоящие произведения искусства на молочной пенке.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" style="background-image: url('img/portfolio/02.png')" data-src="img/portfolio/02.png">
+                    <div class="description-container">
+                        <p class="portfolio-title">Фирменный завтрак</p>
+                        <p class="portfolio-description">Круассаны, яичница и свежевыжатый сок - идеальное начало дня.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" style="background-image: url('img/portfolio/03.png')" data-src="img/portfolio/03.png">
+                    <div class="description-container">
+                        <p class="portfolio-title">Уютный интерьер</p>
+                        <p class="portfolio-description">Мягкие диваны, приглушенный свет и запах свежего кофе создают особую атмосферу.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" style="background-image: url('img/portfolio/04.png')" data-src="img/portfolio/04.png">
+                    <div class="description-container">
+                        <p class="portfolio-title">Авторские десерты</p>
+                        <p class="portfolio-description">Чизкейки, тирамису и эклеры - все готовится на нашей кухне каждое утро.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" style="background-image: url('img/portfolio/05.png')" data-src="img/portfolio/05.png">
+                    <div class="description-container">
+                        <p class="portfolio-title">Летняя терраса</p>
+                        <p class="portfolio-description">В теплое время года открывается терраса с видом на парк.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" style="background-image: url('img/portfolio/06.png')" data-src="img/portfolio/06.png">
+                    <div class="description-container">
+                        <p class="portfolio-title">Кофе с собой</p>
+                        <p class="portfolio-description">Спешите? Возьмите любимый напиток в фирменном стаканчике.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <h2 class="main-title">Отзывы</h2>
+            <div class="delimiter"></div>
+            <p class="main-title-description">Наши клиенты о нас</p>
+
+            <div class="testimonials-container">
+                <div class="testimonials-inner">
+                    <div class="testimonials-card">
+                        <div class="card-row">
+                            <img class="card-img" src="img/testimonials/01.svg" alt="Анна Петрова">
+                            <div class="card-head">
+                                <h4>Оля Шиворова</h4>
+                                <span>15/02/2024</span>
+                            </div>
+                        </div>
+                        <p>Замечательное место! Кофе всегда свежий и ароматный, а персонал очень приветливый. Особенно нравится уютная атмосфера.</p>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="card-row">
+                            <img class="card-img" src="img/testimonials/02.svg" alt="Михаил Сидоров">
+                            <div class="card-head">
+                                <h4>Даниил Виктор</h4>
+                                <span>22/01/2024</span>
+                            </div>
+                        </div>
+                        <p>Отличная кофейня с домашней выпечкой. Часто прихожу сюда поработать - быстрый Wi-Fi и спокойная обстановка.</p>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="card-row">
+                            <img class="card-img" src="img/testimonials/03.svg" alt="Дмитрий Козлов">
+                            <div class="card-head">
+                                <h4>Дмитрий Козлов</h4>
+                                <span>05/02/2024</span>
+                            </div>
+                        </div>
+                        <p>Лучший капучино в городе! Бариста - настоящие мастера своего дела. Рекомендую попробовать фирменный десерт.</p>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="card-row">
+                            <img class="card-img" src="img/testimonials/04.svg" alt="Елена Морозова">
+                            <div class="card-head">
+                                <h4>Елена Морозова</h4>
+                                <span>18/02/2024</span>
+                            </div>
+                        </div>
+                        <p>Приходим сюда всей семьей по выходным. Детям очень нравятся сладости, а нам с мужем - вкусный кофе.</p>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="card-row">
+                            <img class="card-img" src="img/testimonials/05.svg" alt="Ольга Новикова">
+                            <div class="card-head">
+                                <h4>Ольга Новикова</h4>
+                                <span>28/02/2024</span>
+                            </div>
+                        </div>
+                        <p>Прекрасное место для встреч с друзьями. Уютный интерьер, приятная музыка и отличный сервис.</p>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="card-row">
+                            <img class="card-img" src="img/testimonials/06.svg" alt="Алексей Волков">
+                            <div class="card-head">
+                                <h4>Алексей Волков</h4>
+                                <span>10/03/2024</span>
+                            </div>
+                        </div>
+                        <p>Регулярно заказываю кофе с собой по утрам. Быстро, вкусно и всегда с улыбкой. Спасибо за отличное настроение!</p>
+                    </div>
+                </div>
+                <div class="testimonials-controls">
+                    <div class="control-item active"></div>
+                    <div class="control-item"></div>
+                    <div class="control-item"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="main-title">Контактная форма</h2>
+            <div class="delimiter"></div>
+            <p class="main-title-description">С радостью ответим на любой вопрос</p>
+            <form id="contactform" method="post" action="contact.php" class="contact-form">
+                <input name="name" type="text" class="col" placeholder="Ваше имя *" required>
+                <input name="email" type="email" class="col" placeholder="E-mail адрес *" required>
+                <input name="theme" type="text" class="col" placeholder="Тема сообщения">
+                <input name="phone" type="tel" class="col" placeholder="Номер телефона">
+                <textarea name="comment" class="row-col" placeholder="Сообщение *" required></textarea>
+                <span class="row-col check">
+                    <input id="accept" type="checkbox" class="" required>
+                    <label for="accept">Я прочитал(а) и принимаю условия
+                        <a href="#">Пользовательского соглашения</a></label>
+                </span>
+                <input type="submit" id="submit" class="submit btn" value="Отправить сообщение">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#top" class="menu-element" data-link="top" title="На главную">Главная</a></li>
+                <li><a href="#services" class="menu-element" data-link="services" title="Наши услуги">Меню</a></li>
+                <li><a href="#portfolio" class="menu-element" data-link="portfolio" title="Галерея">Галерея</a></li>
+                <li><a href="#contact" class="menu-element" data-link="contact" title="Контакты">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="brand">
+            <img src="img/icons/coffee.png" alt="Логотип кофейни">
+            <span>Уютный уголок</span>
+        </div>
+        <div class="social">
+            <a href="#" title="Facebook">
+                <img class="social-img" src="img/social/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#" title="Instagram">
+                <img class="social-img" src="img/social/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#" title="Telegram">
+                <img class="social-img" src="img/social/telegram.svg" alt="Telegram">
+            </a>
+            <a href="#" title="VK">
+                <img class="social-img" src="img/social/vk.svg" alt="VK">
+            </a>
+            <a href="#" title="Twitter">
+                <img class="social-img" src="img/social/twitter.svg" alt="Twitter">
+            </a>
+        </div>
+        <div class="copyright">Уютный уголок 2024</div>
+    </footer>
+
+</body>
+</html>
